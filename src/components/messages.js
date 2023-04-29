@@ -4,7 +4,7 @@ import { Button, Card, Container, FormControl, InputGroup, Row } from 'react-boo
 import { Configuration, OpenAIApi } from "openai";
 
 const configuration = new Configuration({
-  apiKey: "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",
+    apiKey: process.env.REACT_APP_OPENAI_API_KEY
 });
 const openai = new OpenAIApi(configuration);
 
